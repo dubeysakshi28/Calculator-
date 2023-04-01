@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+      <h1>Calculator</h1>
+    </div>
+    <table id="calc">
+        <tr>
+        <td colspan="3"><input type="text"id="result"></td>
+         <td><input type="button"value="C"onclick="clr()"id="clear"/></button></td>
+        </tr>
+        <tr>
+            <td><input type="button"value="1"id="button"onclick="dis('1')"onkeydown="myFunction(event)"></td>
+            <td><input type="button"value="2"id="button"onclick="dis('2')"onkeydown="myFunction(event)"></td>
+            <td><input type="button"value="3"id="button"onclick="dis('3')"onkeydown="myFunction(event)"></td>
+            <td><input type="button"value="/"id="operator"onclick="dis('/')"onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button"value="4"id="button"onclick="dis('4')"onkeydown="myFunction(event)"></td>
+            <td><input type="button"value="5"id="button"onclick="dis('5')"onkeydown="myFunction(event)"></td>
+            <td><input type="button"value="6"id="button"onclick="dis('6')"onkeydown="myFunction(event)"></td>
+            <td><input type="button"value="*"id="operator"onclick="dis('*')"onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button"value="7"id="button"onclick="dis('7')"onkeydown="myFunction(event)"></td>
+            <td><input type="button"value="8"id="button"onclick="dis('8')"onkeydown="myFunction(event)"></td>
+            <td><input type="button"value="9"id="button"onclick="dis('9')"onkeydown="myFunction(event)"></td>
+            <td><input type="button"value="-"id="operator"onclick="dis('-')"onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button"value="0"id="button"onclick="dis('0')"onkeydown="myFunction(event)"></td>
+            <td><input type="button"value="."id="button"onclick="dis('.')"onkeydown="myFunction(event)"id="btn1"></td>
+            <td><input type="button"value="="id="equal-sign"onclick="solve()"id="btn1"></td>
+            <td><input type="button"value="+"id="operator"onclick="dis('+')"onkeydown="myFunction(event)"></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
